@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.menu{
+  width: 640px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.menu li{
+  float: left;
+  list-style-type: none;
+  width: 100px;
+  text-align: center;
+  padding-right: 5px;
+  background: #aaa;
+}
+
+.menu a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.dropdown{
+  position: relative;
+
+}
+.dropdown ul{
+  position: absolute;
+  top: 17px;
+  height: 0px;
+  overflow: hidden;
+  width: 300px;
+
+}
+.dropdown li{
+  position: relative;
+  float: none;
+  background: red;
+}
+
+.dropdown li ul{
+  position: absolute;
+  left: 100px;
+  top: 0px;
+}
