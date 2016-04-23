@@ -1,13 +1,21 @@
-$(function(){
+$(function() {
   dropDown = $('.dropdown');
 
   $(dropDown).hover(
-    function(){
+    function() {
       $(this).children('ul').animate({
-        height: '150px'}, 500)
+          height: '250px',
+        }, 500),
+        $(this).children('ul').children('li').animate({
+          backgroundColor: '#937DE9',
+        }, 1000)
     },
-    function(){
+    function() {
       $(this).children('ul').animate({
-        height: '0px'}, 500)
-      });
-  })
+          height: '0px'
+        }, 500),
+        $(this).children('ul').children('li').animate({
+          backgroundColor: '#545371',
+        }, 1000)
+    });
+})
