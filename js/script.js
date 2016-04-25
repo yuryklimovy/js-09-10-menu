@@ -1,5 +1,5 @@
 $(function() {
-  dropDown = $('.dropdown');
+  var dropDown = $('.dropdown');
 
   $(dropDown).hover(
     function() {
@@ -8,8 +8,8 @@ $(function() {
         }, 500),
         $(this).children('ul').children('li').animate({
           backgroundColor: '#937DE9',
-        }, 1000)
-    },
+        }, 1000
+      )},
     function() {
       $(this).children('ul').animate({
           height: '0px'
@@ -18,4 +18,4 @@ $(function() {
           backgroundColor: '#545371',
         }, 1000)
     });
-})
+});
